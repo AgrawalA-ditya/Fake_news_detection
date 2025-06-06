@@ -20,6 +20,8 @@ Shape of the combined dataset: (76480, 2)
 Used Logistic Regression, Stochastic gradient descent,Random forest, GBC, xgboost, DecisionTree, Multinomial Naive Baye and Bernoulli Naive Baye classifiers.
 The highest accuracy score is **87.18%** by LogisticGegression classifier, which was then saved on disk with name model.plk
 model.plk is used to deploy the model using Flask.
+<img width="788" alt="Screenshot 2025-06-06 at 2 13 00 PM" src="https://github.com/user-attachments/assets/9e31fd25-7c2e-42b3-aa1f-b584cd49df50" />
+
 
 ## ML model Deployment
 For Deployment, created a sample web interface which will get the text from the user and then send it to the flask server. In the flask server, we will use the saved model model.plk to predict the news is real or fake and then return the result to the user through web interface.
