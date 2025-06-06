@@ -20,15 +20,35 @@ Shape of the combined dataset: (76480, 2)
 Used Logistic Regression, Stochastic gradient descent,Random forest, GBC, xgboost, DecisionTree, Multinomial Naive Baye and Bernoulli Naive Baye classifiers.
 The highest accuracy score is **87.18%** by LogisticGegression classifier, which was then saved on disk with name model.plk
 model.plk is used to deploy the model using Flask.
+
 <img width="788" alt="Screenshot 2025-06-06 at 2 13 00 PM" src="https://github.com/user-attachments/assets/9e31fd25-7c2e-42b3-aa1f-b584cd49df50" />
 
 
 ## ML model Deployment
 For Deployment, created a sample web interface which will get the text from the user and then send it to the flask server. In the flask server, we will use the saved model model.plk to predict the news is real or fake and then return the result to the user through web interface.
+
 Prediction1:
 <img width="1249" alt="prediction1" src="https://github.com/user-attachments/assets/6d45db30-7ce6-415b-86f3-69fbac6d90ce" />
 Prediction2:
 <img width="1263" alt="prediction2" src="https://github.com/user-attachments/assets/bb11ebe3-401f-473f-b864-27e79ad25d0b" />
+
+## Steps to Run this software
+The first step would be to clone this repo in a folder in your local machine. To do that you need to run following command in command prompt or in git bash
+$ git clone  https://github.com/mohammed97ashraf/Fake_news_Detection.git
+2.This will copy all the data source file, program files and model into your machine.
+
+3.Then Open the app.py which is insise the 'Model deployment using Flask' folder/directory
+
+4.After you change the folder/directory link run app.py by using IDLE(defult python Editer) or open the command prompt in the same directory and run the folloing code
+
+$ python app.py
+5.Then in Your web browser type this link http:localhost:5000/.
+
+6.Then Enter the Text in Text box you want to check and click on submit.
+
+7.Program will take user input text and will be used by model to classify in one of categories of "True" and "False".
+
+8.Then the Flask server will return the result to your browser.
 
 
 
