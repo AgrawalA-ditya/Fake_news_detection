@@ -29,26 +29,10 @@ For Deployment, created a sample web interface which will get the text from the 
 
 Prediction1:
 <img width="1249" alt="prediction1" src="https://github.com/user-attachments/assets/6d45db30-7ce6-415b-86f3-69fbac6d90ce" />
+
 Prediction2:
 <img width="1263" alt="prediction2" src="https://github.com/user-attachments/assets/bb11ebe3-401f-473f-b864-27e79ad25d0b" />
 
-## Steps to Run this software
-The first step would be to clone this repo in a folder in your local machine. To do that you need to run following command in command prompt or in git bash
-$ git clone  https://github.com/mohammed97ashraf/Fake_news_Detection.git
-2.This will copy all the data source file, program files and model into your machine.
-
-3.Then Open the app.py which is insise the 'Model deployment using Flask' folder/directory
-
-4.After you change the folder/directory link run app.py by using IDLE(defult python Editer) or open the command prompt in the same directory and run the folloing code
-
-$ python app.py
-5.Then in Your web browser type this link http:localhost:5000/.
-
-6.Then Enter the Text in Text box you want to check and click on submit.
-
-7.Program will take user input text and will be used by model to classify in one of categories of "True" and "False".
-
-8.Then the Flask server will return the result to your browser.
 
 
 
